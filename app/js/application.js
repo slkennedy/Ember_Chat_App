@@ -1,3 +1,7 @@
-console.log('The Iron Yard Rocks');
+// var App = Ember.Application.create({});
 
-var App = Ember.Application.extend ({});
+window.Chat = Ember.Application.create({
+	LOG_TRANSITIONS: true
+});
+
+Chat.ApplicationAdapter = DS.FixtureAdapter.extend();
